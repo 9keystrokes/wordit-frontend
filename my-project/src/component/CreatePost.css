@@ -1,0 +1,126 @@
+/* Background Style - Hollywood inspired */
+.create-post-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(34,34,34,0.9));
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Background settings */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #000000, #1a1a1a);
+  }
+  
+  /* Styling the create post card */
+  .create-post-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid #444;
+  }
+  
+  /* Title with icons */
+  .create-post-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFD700; /* Gold color for Hollywood feel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .create-post-description {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 25px;
+  }
+  
+  /* Form controls */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 8px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    border: 2px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #FFD700;
+  }
+  
+  /* Textarea for review content */
+  textarea.form-control {
+    height: 150px;
+    resize: none;
+  }
+  
+  /* Submit Button Styling */
+  .btn-post-article {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-post-article:hover {
+    background-color: #FFB800;
+    transform: translateY(-2px);
+  }
+  
+  .feedback-message {
+    font-size: 18px;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .create-post-card {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .create-post-title {
+      font-size: 26px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,18 @@
+.skill {
+  list-style: circle;
+}
+.skill li {
+  list-style: circle;
+  margin: 8px 10px 8px 15px;
+}
+.margin {
+  margin: 30px 0;
+}
+/* In your CSS file (e.g., Contact.css) */
+
+.image-style {
+  width: 150px;  /* or any size you prefer */
+  height: 150px;
+  object-fit: cover;  /* Ensures the image covers the area without distortion */
+  border-radius: 50%; /* Makes the images round */
+}

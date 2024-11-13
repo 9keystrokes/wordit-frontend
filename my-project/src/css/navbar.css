@@ -1,0 +1,109 @@
+/* Styling for Navbar */
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #111; /* Dark background for cinematic effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFD700; /* Gold color for the brand name */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #FFD700;
+  color: #111;
+  border-radius: 30px;
+  transform: scale(1.1);
+}
+
+.navbar-dark .navbar-nav .nav-link .icon {
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover .icon {
+  transform: rotate(20deg);
+}
+
+.btn-light, .btn-outline-light {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #FFD700;
+  border: none;
+  color: #111;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover, .btn-outline-light:hover {
+  background-color: #FFB800;
+  transform: scale(1.1);
+}
+
+.btn-danger {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Mobile view adjustments */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  .navbar-nav .nav-link .icon {
+    font-size: 20px;
+  }
+  .btn-light, .btn-outline-light {
+    font-size: 16px;
+  }
+}
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  z-index: 1000;  /* Ensure navbar stays on top of content */
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

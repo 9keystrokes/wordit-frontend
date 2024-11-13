@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card Styles */
+.about-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #ff6f61; /* Warm color for attention */
+  color: white;
+  padding: 40px 0;
+  border-radius: 8px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.banner p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Mern Image and Description Section */
+.mern {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mern-image {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mern-description {
+  width: 45%;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mern-list {
+  padding-left: 20px;
+}
+
+.mern-list li {
+  font-size: 16px;
+}
+
+/* Section Heading Styles */
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Text Paragraph Styles */
+p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mern {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mern-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mern-description {
+    width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+}
