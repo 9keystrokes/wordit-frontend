@@ -10,7 +10,7 @@ export default function PostsList(props) {
   useEffect(() => {
     // Fetch the list of posts
     axios
-      .get("http://localhost:5000/posts")
+      .get("https://wordit-p7q2.onrender.com/posts")
       .then((res) => {
         setArticles(res.data);
         setLoading(false);
@@ -24,7 +24,7 @@ export default function PostsList(props) {
   const deletePost = (id) => {
     if (window.confirm("Are you sure you want to delete this post?")) {
       axios
-        .delete("http://localhost:5000/posts/delete/" + id)
+        .delete("https://wordit-p7q2.onrender.com/posts/delete/" + id)
         .then((res) => {
           alert(res.data);
           setArticles(articles.filter((article) => article._id !== id));

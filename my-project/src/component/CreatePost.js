@@ -19,7 +19,7 @@ export default function CreatePost() {
     setTitle("");
     setParagraph("");
     axios
-      .post("http://localhost:5000/posts/create", newPost)
+      .post("https://wordit-p7q2.onrender.com/posts/create", newPost)
       .then((res) => {
         console.log(res.data);
         setMessage("🎬 Review Posted Successfully!");

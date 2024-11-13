@@ -18,7 +18,7 @@ export default function Post() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/posts/" + id)
+      .get("https://wordit-p7q2.onrender.com/posts/" + id)
       .then((res) => {
         setTitle(res.data.title);
         setParagraph(res.data.paragraph);
@@ -39,7 +39,7 @@ export default function Post() {
     alert("Comment Added by " + commentAuthor);
     const sendComment = { comment: message, author: commentAuthor };
     axios
-      .put("http://localhost:5000/posts/comment-add/" + postId, sendComment)
+      .put("https://wordit-p7q2.onrender.com/posts/comment-add/" + postId, sendComment)
       .then(() => {
         setMessage("");
       })
