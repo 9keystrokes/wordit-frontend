@@ -17,7 +17,7 @@ export default function Signup() {
       email,
     };
     axios
-      .post("http://localhost:5000/user/signup", newUser)
+      .post("https://wordit-p7q2.onrender.com/user/signup", newUser)
       .then((res) => {
         if (res.data.isLogged) {
           sessionStorage.setItem("isLogged", true);

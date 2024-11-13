@@ -15,7 +15,7 @@ export default function Login() {
     const user = { email, password };
     
     axios
-      .post("http://localhost:5000/user/signin", user)
+      .post("https://wordit-p7q2.onrender.com/user/signin", user)
       .then((res) => {
         setIsLoading(false);
         if (res.data.isLogged) {

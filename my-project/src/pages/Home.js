@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/posts");
+        const res = await axios.get("https://wordit-p7q2.onrender.com/posts");
         setPosts(res.data.reverse());
       } catch (err) {
         setError("Error fetching posts. Please try again later.");
@@ -27,7 +27,7 @@ export default function Home() {
       if (sessionStorage.getItem("isLogged")) {
         try {
           const res = await axios.get(
-            "http://localhost:5000/posts/own/" + sessionStorage.getItem("id")
+            "https://wordit-p7q2.onrender.com/posts/own/" + sessionStorage.getItem("id")
           );
           setOwnPost(res.data.reverse());
         } catch (err) {
